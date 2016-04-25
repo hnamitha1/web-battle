@@ -1,4 +1,11 @@
-<h1>My name is <%= @name %></h1>
+<% if @name %>
+<h1>My eyes are <%= @name %></h1>
+<h1>I am <%= @color %></h1>
+<% end %>
+
+<% if @adorable%>
+<h1>I am adorable</h1>
+<% end %>
 
 <div>
     <img style='border: 3px dashed red' src='http://bit.ly/1eze8aE'>

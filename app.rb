@@ -6,8 +6,9 @@ end
 
 get '/secret' do
 	"it's me again"
-end	
+end
 
 get '/cat' do
+	@names = ["Amigo", "Maria", "Pedro"].sample
 	erb(:index)
-end	
+end

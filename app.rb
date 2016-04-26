@@ -14,14 +14,18 @@ set :session_secret, 'super secret'
     erb(:index)
   end
 
-  get '/named-cat' do
+  post '/named-cat' do
     p params[:name]
     @name = params[:name]
     @color = params[:color]
     @adorable = params[:adorable]
     erb(:index)
+
   end
 
+  get '/cat-form' do
+    erb (:cat_form)
+  end
 
   get '/demo2' do
     "This is a new demo"

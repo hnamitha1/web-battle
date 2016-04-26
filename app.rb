@@ -16,6 +16,6 @@ end
 get '/named-cat' do
 	p params
 	@color = params[:color]
-	@names = params[:name]
+	@name = params[:name]
 	erb(:index)
 end

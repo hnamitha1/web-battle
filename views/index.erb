@@ -1,12 +1,13 @@
 <% if @name %>
-	<h1>"My eyes are <%= @name %>"</h1>
-	<h1>I am <%= @color %></h1>
+  <h1> "My name is <%= @name %>, <%= @color %>" <h1>
 <% end %>
 
-<% if @adorable%>
-  <h1>I am adorable</h1>
-<% end %>
+<form action="/named-cat" method="get">
+  name:<input type="text" name="name">
+  color:<input type="text" name="color">
+  <input type="submit" value="Submit">
+</form>
 
-<div>
-    <img style='border: 3px dashed red' src='http://bit.ly/1eze8aE'>
+<div style = 'border: 3px dashed purple'>
+  <img src='http://bit.ly/1eze8aE'>
 </div>
